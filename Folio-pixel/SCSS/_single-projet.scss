@@ -1,0 +1,53 @@
+.single-post-container{
+    position: relative;
+    top: 310px;
+}
+
+.title{
+    font-family: Pokemon_Classic;
+    display: flex;
+    border: 5px solid white;
+    /* width: 340px; */
+    background-color: #C4CFA1;
+    color: black;
+    /* left: 50%; */
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.post-techno{
+    border: 3px solid black;
+    padding: 10px;
+    font-family: 'Pokemon_Classic';
+    font-size: 1rem;
+    box-shadow: 2px 2px 0 black;
+    position: absolute;
+    top: 373px;
+    background-color: #C4CFA1;
+    left: 25px;
+}
+
+.post-thumbnail{
+    display: flex;
+    margin-top: 18px;
+}
+
+.post-text{
+    font-family: 'Pokemon_Classic';
+    border: 5px solid white;
+    padding: 10px;
+    box-shadow: 6px 6px 0 white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 17px;
+    margin-bottom: 114px;
+}
+
+.first-section{
+    position: relative;
+    top: 50px;
+}

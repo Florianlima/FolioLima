@@ -1,3 +1,39 @@
+/*  Modal de contact  */
+document.addEventListener("DOMContentLoaded", function () {
+    const modalContainer = document.querySelector(".modal-container");
+    const overlay = document.querySelector(".overlay");
+    const modal = document.querySelector(".modal");
+    const contactLinks = document.querySelectorAll(".menu-item-14 > a , .menu-item-30 > a");
+
+    // Ajout d'un écouteur sur chaque lien "Contact"
+    contactLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Empêche la navigation
+            toggleModal();
+        });
+    });
+
+    // Ajout d'un écouteur pour fermer la modal via l'overlay ou le bouton de fermeture
+    overlay.addEventListener("click", toggleModal);
+
+    modalContainer.addEventListener("click", function (event) {
+        if (event.target === modalContainer) {
+            toggleModal();
+        }
+    });
+
+    // Fonction pour basculer la modal
+    function toggleModal() {
+        modalContainer.classList.toggle("active");
+    }
+});
+
+
+
+
+
+/* header */
+
 document.addEventListener('DOMContentLoaded', () => {
     const startElement = document.getElementById('start');
     const welcomeElement = document.getElementById('welcome');
@@ -45,3 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+
+

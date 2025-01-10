@@ -1,0 +1,27 @@
+.site-logo {
+    margin-right: 20px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Pokemon_Solid';
+        letter-spacing: 6px;
+        color: white;
+    }
+}
+
+.container{
+    top: 55px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

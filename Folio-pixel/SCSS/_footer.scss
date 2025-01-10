@@ -1,0 +1,27 @@
+.site-footer {
+    padding: 10px;
+    border-top: 1px solid white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #C4CFA1;
+  
+    .footer-navigation {
+        display: flex;
+        justify-content: center;
+      
+        .footer-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          
+            li {
+                margin: 0 40px;
+                font-family: 'Pokemon_Classic';
+            }
+        }
+    }
+}
+
+

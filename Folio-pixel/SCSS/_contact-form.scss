@@ -1,0 +1,73 @@
+.wpcf7-form {
+    &.init, 
+    &.invalid, 
+    &.sent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 584px;
+    }
+}
+
+#wpcf7-f18-o1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding: 40px;*/
+
+    p {
+        font-family: 'Pokemon_Classic';
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        margin: 0px;
+        line-height: 18px;
+        text-transform: uppercase;
+        padding: 5px;
+        color: black;
+    }
+}
+
+.wpcf7-form-control {
+    &.wpcf7-text, 
+    &.wpcf7-textarea {
+        color: black !important;
+    }
+
+    &.wpcf7-text.wpcf7-validates-as-required {
+        border-radius: 7px;
+        height: 40px;
+        width: 263px;
+        border: 2px solid #B8BBC2;
+        text-transform: uppercase;
+    }
+
+    &.wpcf7-textarea {
+        border-radius: 7px;
+        height: 210px;
+        width: 263px;
+        border: 2px solid #B8BBC2;
+    }
+
+    &.has-spinner.wpcf7-submit {
+        width: 270px;
+        height: 50px;
+        border: none;
+        padding: 0;
+        font-family: 'Pokemon_Classic';
+        font-style: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D8D8D8;
+    }
+}
+
+.wpcf7-response-output {
+    margin-top: -20px;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin-top: -20px;
+}
