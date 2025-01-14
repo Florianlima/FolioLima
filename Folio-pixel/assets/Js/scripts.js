@@ -108,6 +108,56 @@ const swiper = new Swiper('.swiper', {
   
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Sélectionner toutes les Pokéballs
+    const pokeballContainers = document.querySelectorAll(".pokeball-container");
+
+    // Intersection Observer pour les animations au scroll
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                } else {
+                    entry.target.classList.remove("animate");
+                }
+            });
+        },
+        {
+            threshold: 0.5, // L'animation se déclenche lorsque 50% de l'élément est visible
+        }
+    );
+
+    // Ajouter l'observer à chaque Pokéball
+    pokeballContainers.forEach((container) => observer.observe(container));
+
+    // Interactivité pour ouvrir/fermer les cartes
+    pokeballContainers.forEach((container) => {
+        container.addEventListener("click", () => {
+            // Vérifie si la Pokéball est déjà active
+            if (container.classList.contains("active")) {
+                container.classList.remove("active");
+            } else {
+                // Fermer toutes les cartes actives
+                document.querySelectorAll(".pokeball-container.active").forEach((activeContainer) => {
+                    activeContainer.classList.remove("active");
+                });
+
+                // Activer la carte actuelle
+                container.classList.add("active");
+            }
+        });
+    });
+
+    // Fermer les cartes en cliquant à l'extérieur
+    document.addEventListener("click", (e) => {
+        if (!e.target.closest(".pokeball-container")) {
+            document.querySelectorAll(".pokeball-container.active").forEach((activeContainer) => {
+                activeContainer.classList.remove("active");
+            });
+        }
+    });
+});
 
 
 

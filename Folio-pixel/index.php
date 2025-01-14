@@ -9,7 +9,8 @@
             <div class="character" id="character">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/character.png" alt="Character">
                 <div class="dialog-box" id="dialog">
-                    Bonjour, je m'appelle Florian Lima ! Je suis développeur WordPress et fan de Pokémon. <div class="arrow-dial"></div>
+                    Bonjour, je m'appelle Florian Lima ! Je suis développeur WordPress et fan de Pokémon. 
+                    <div class="arrow-dial"></div>
                 </div>
             </div>
             <nav class="menu-pokemon" id="menu">
@@ -21,7 +22,40 @@
                 ));
                 ?>
             </nav>
+
+            
         </div>
+        <!-- Section des Pokéballs -->
+        <section class="pokeball-projects">
+                <?php
+                $args = array(
+                    'post_type' => 'card',
+                    'posts_per_page' => -1,
+                );
+                $query = new WP_Query($args);
+
+                if ($query->have_posts()) :
+                    while ($query->have_posts()) : $query->the_post();
+                ?>
+                        <div class="pokeball-container">
+                            <div class="pokeball"></div>
+                            <div class="project-card hidden">
+                                <h3><?php get_the_title(); ?></h3>
+                                <?php if (has_post_thumbnail()) : ?>
+                        <div class="project-thumbnail">
+                            <?php the_post_thumbnail('small'); // Taille moyenne de l'image ?>
+                        </div>
+                    <?php endif; ?>
+                                <p><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+                                <a href="<?php the_permalink(); ?>" class="view-project">Voir le projet</a>
+                            </div>
+                        </div>
+                <?php
+                    endwhile;
+                endif;
+                wp_reset_postdata();
+                ?>
+            </section>
     </main>
 
     <?php get_footer(); ?>
