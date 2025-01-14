@@ -397,6 +397,7 @@ header, body {
   justify-content: center;
   margin-left: 30%;
   margin-right: 30%;
+  margin-bottom: 10px;
 }
 
 .post-techno {
@@ -408,7 +409,7 @@ header, body {
   position: absolute;
   top: 373px;
   background-color: #C4CFA1;
-  left: 25px;
+  left: 54px;
 }
 
 .post-thumbnail {
@@ -435,6 +436,18 @@ header, body {
   top: 50px;
 }
 
+.swiper {
+  width: 1444px;
+  height: 577px;
+  z-index: -1;
+}
+
+.swiper-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .site-footer {
   padding: 10px;
   border-top: 1px solid white;
@@ -442,6 +455,7 @@ header, body {
   bottom: 0;
   width: 100%;
   background: #C4CFA1;
+  left: 0;
 }
 .site-footer .footer-navigation {
   display: flex;
@@ -456,4 +470,62 @@ header, body {
 .site-footer .footer-navigation .footer-menu li {
   margin: 0 40px;
   font-family: "Pokemon_Classic";
+}
+
+.card-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  position: relative;
+  margin-top: 40px;
+}
+
+.card-navigation a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+.card-navigation .arrow {
+  position: absolute;
+  bottom: 5px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  -webkit-clip-path: polygon(100% 50%, 0 100%, 0 0);
+          clip-path: polygon(100% 50%, 0 100%, 0 0);
+}
+
+.card-navigation .prev {
+  right: auto;
+  left: 5px;
+  transform: rotate(180deg);
+  animation: bounce-reverse 0.5s infinite;
+}
+
+.card-navigation .next {
+  right: 5px;
+  left: auto;
+  transform: rotate(0deg);
+  animation: bounce 0.5s infinite;
+}
+
+/* Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes bounce-reverse {
+  0%, 100% {
+    transform: translateY(0) rotate(180deg); /* Pas de mouvement vertical */
+  }
+  50% {
+    transform: translateY(5px) rotate(180deg); /* Mouvement vertical vers le bas */
+  }
 }/*# sourceMappingURL=style.css.map */

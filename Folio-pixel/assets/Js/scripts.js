@@ -84,5 +84,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const swiper = new Swiper('.swiper', {
+    // Direction horizontale
+    direction: 'horizontal',
+    // Boucle infinie
+    loop: true,
+    
+    // Pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    
+    
+    // Autoplay
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+});
+
+  
+
+
+
 
 
