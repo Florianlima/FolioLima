@@ -40,10 +40,10 @@
                         <div class="pokeball-container">
                             <div class="pokeball"></div>
                             <div class="project-card hidden">
-                                <h3><?php get_the_title(); ?></h3>
+                                <h3><?= get_the_title(); ?></h3>
                                 <?php if (has_post_thumbnail()) : ?>
                         <div class="project-thumbnail">
-                            <?php the_post_thumbnail('small'); // Taille moyenne de l'image ?>
+                            <?php the_post_thumbnail('small');  ?>
                         </div>
                     <?php endif; ?>
                                 <p><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>

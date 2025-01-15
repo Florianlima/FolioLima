@@ -100,7 +100,7 @@ const swiper = new Swiper('.swiper', {
     
     // Autoplay
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
     },
 });
@@ -161,3 +161,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const menuItem = document.querySelector(".menu-item-15 > a");
+
+    if (menuItem) {
+        menuItem.addEventListener("click", function(e) {
+            e.preventDefault();  // Empêche le comportement par défaut du lien
+            const targetId = ".pokeball-projects";
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"  // Défilement fluide
+                });
+            }
+        });
+    }
+});

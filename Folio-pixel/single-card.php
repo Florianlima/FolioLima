@@ -24,7 +24,7 @@ get_header(); ?>
                         <div class="title">
                             <h1 class="post-title line-break-title"><?php the_title(); ?></h1>
                         </div>
-
+                  </div>
                         <div class="post-techno">
                             <?php
 
@@ -53,7 +53,7 @@ get_header(); ?>
                             <div class="swiper-pagination"></div>
                         </div>
 
-                    </div>
+                   
 
                     <div class="card-navigation">
                         <?php
