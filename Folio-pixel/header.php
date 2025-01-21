@@ -12,8 +12,10 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <header class="header">
-
+    <header class="header" id="header">
+    <div id="animated-container">
+    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/leviator.gif" alt="Léviator" id="leviator-img">
+</div>
             <div class="site-logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo.png" alt="Logo">

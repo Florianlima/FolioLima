@@ -5,15 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.querySelector(".modal");
     const contactLinks = document.querySelectorAll(".menu-item-14 > a , .menu-item-30 > a");
 
-    // Ajout d'un écouteur sur chaque lien "Contact"
+    
     contactLinks.forEach(link => {
         link.addEventListener("click", function (event) {
-            event.preventDefault(); // Empêche la navigation
+            event.preventDefault(); 
             toggleModal();
         });
     });
 
-    // Ajout d'un écouteur pour fermer la modal via l'overlay ou le bouton de fermeture
+    // Ajout d'un écouteur pour fermer la modal
     overlay.addEventListener("click", toggleModal);
 
     modalContainer.addEventListener("click", function (event) {
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     dialogElement.style.display = 'block';
                     setTimeout(() => {
                        dialogElement.style.display = 'none';
-                        // Afficher le menu à la fin
+                       
                         menuElement.style.display = 'block';
                     }, 5000); // Temps pour le dialogue
                 }, 1500); // Attente que le personnage slide in
@@ -84,26 +84,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const swiper = new Swiper('.swiper', {
-    // Direction horizontale
-    direction: 'horizontal',
-    // Boucle infinie
-    loop: true,
-    
-    // Pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+/*document.addEventListener("DOMContentLoaded", function () {
+    // Initialisation du Swiper principal
+    const swiper = new Swiper('.mySwiper', {
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            loop: true,
+        },
+    });
 
-    
-    
-    // Autoplay
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-});
+    // Initialisation du Swiper des miniatures
+    const swiper2 = new Swiper('.mySwiper2', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    // Lier les deux Swipers
+    swiper.thumbs.swiper = swiper2;
+    swiper.thumbs.init();
+});*/
+
+
 
   
 
@@ -161,21 +166,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     const menuItem = document.querySelector(".menu-item-15 > a");
 
     if (menuItem) {
         menuItem.addEventListener("click", function(e) {
-            e.preventDefault();  // Empêche le comportement par défaut du lien
+            e.preventDefault();  
             const targetId = ".pokeball-projects";
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
                 window.scrollTo({
                     top: targetElement.offsetTop,
-                    behavior: "smooth"  // Défilement fluide
+                    behavior: "smooth"  
                 });
             }
         });
     }
+});*/
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const character = document.getElementById('character');
+    const characterModal = document.getElementById('characterModal');
+    const closeCharacterModal = document.getElementById('closeCharacterModal');
+
+    if (character && characterModal && closeCharacterModal) {
+        // Ouvrir la modale au clic sur le personnage
+        character.addEventListener('click', () => {
+            characterModal.classList.add('show');
+        });
+
+        // Fermer la modale au clic sur le bouton "Fermer"
+        closeCharacterModal.addEventListener('click', () => {
+            characterModal.classList.remove('show');
+        });
+
+        // Fermer la modale si on clique en dehors du contenu
+        characterModal.addEventListener('click', (e) => {
+            if (e.target === characterModal) {
+                characterModal.classList.remove('show');
+            }
+        });
+    } else {
+        console.error('Certains éléments nécessaires pour la modale du personnage sont introuvables.');
+    }
 });
+

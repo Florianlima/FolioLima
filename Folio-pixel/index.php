@@ -2,6 +2,7 @@
 
 <body>
     <main class="container">
+    
         <div class="gameboy-screen">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/background.webp" alt="">
             <div class="start" id="start">START</div>
@@ -22,6 +23,7 @@
                 ));
                 ?>
             </nav>
+            <?php get_template_part('templates_parts/presentation'); ?>
 
             
         </div>

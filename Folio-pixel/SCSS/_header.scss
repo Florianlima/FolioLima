@@ -5,6 +5,7 @@
     width: 100%;
     background-color: #000;
     height: 20%;
+    border-bottom: 2px solid white;
 }
 
 
@@ -90,6 +91,7 @@ header ,body  {
     left: -200px;
     text-align: center;
     transition: left 1.5s ease-in-out;
+    cursor: pointer;
 }
 
 .character img {

@@ -1,0 +1,31 @@
+.swiper {
+    width: 1444px;
+    height: 812px; 
+    z-index: 0;
+}
+
+.mySwiper2 {
+    height: 20%; 
+    margin-top: 10px;
+}
+
+.mySwiper2 .swiper-slide {
+    width: auto;
+    height: auto;
+    opacity: 0.4; 
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+    opacity: 1; 
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    color: #C4CFA1;
+}
