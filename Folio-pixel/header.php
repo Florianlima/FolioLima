@@ -22,7 +22,7 @@
                 </a>
                 <h1>Porte-Folio</h1>
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo.png" alt="Logo">
-                </a>
+                
             </div>
     </header>
     
