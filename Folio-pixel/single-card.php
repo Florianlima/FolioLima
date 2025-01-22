@@ -34,7 +34,7 @@ get_header(); ?>
                         }
                         ?>
                     </div>
-
+                    <div class="second-section">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <?php
@@ -71,10 +71,10 @@ get_header(); ?>
                             ?>
                         </div>
                     </div>
+                    </div>
 
 
-
-
+                    <div class="third-section">
                     <div class="card-navigation">
                         <?php
                         $prev_post = get_previous_post();
@@ -95,7 +95,7 @@ get_header(); ?>
                             </a>
                         <?php endif; ?>
                     </div>
-
+                    </div>      
 
                     <div class="post-text">
                         <?php the_content(); ?>

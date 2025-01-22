@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<body>
+<body id="side-bar">
+
     <main class="container">
-    
         <div class="gameboy-screen">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/background.webp" alt="">
             <div class="start" id="start">START</div>
@@ -27,6 +27,7 @@
 
             
         </div>
+        
         <!-- Section des Pokéballs -->
         <section class="pokeball-projects">
                 <?php

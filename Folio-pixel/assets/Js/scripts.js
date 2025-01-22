@@ -82,16 +82,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+/* SWIPER */
 
-
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     // Initialisation du Swiper principal
     const swiper = new Swiper('.mySwiper', {
         spaceBetween: 10,
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-            loop: true,
+           
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 
@@ -101,17 +106,17 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,
+        loop: true,
     });
 
     // Lier les deux Swipers
     swiper.thumbs.swiper = swiper2;
-    swiper.thumbs.init();
-});*/
+});
 
 
 
   
-
+/* Aniamtion Pokeball */
 
 document.addEventListener("DOMContentLoaded", () => {
     // Sélectionner toutes les Pokéballs
@@ -165,27 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-/*document.addEventListener("DOMContentLoaded", () => {
-    const menuItem = document.querySelector(".menu-item-15 > a");
-
-    if (menuItem) {
-        menuItem.addEventListener("click", function(e) {
-            e.preventDefault();  
-            const targetId = ".pokeball-projects";
-            const targetElement = document.querySelector(targetId);
-
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: "smooth"  
-                });
-            }
-        });
-    }
-});*/
-
-
+/* Modal Character */
 
 document.addEventListener('DOMContentLoaded', () => {
     const character = document.getElementById('character');
@@ -214,3 +199,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+/* Click Projet */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuItem = document.querySelector(".menu-item-15 > a");
+
+    if (menuItem) {
+        menuItem.addEventListener("click", function(e) {
+            e.preventDefault();  
+            const targetId = ".pokeball-projects";
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"  
+                });
+            }
+        });
+    }
+});
