@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Initialisation du Swiper principal
+    
     const swiper = new Swiper('.mySwiper', {
         spaceBetween: 10,
         loop: true,
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 
-    // Initialisation du Swiper des miniatures
     const swiper2 = new Swiper('.mySwiper2', {
         spaceBetween: 10,
         slidesPerView: 4,
@@ -23,6 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
     });
 
-    // Lier les deux Swipers
+    
     swiper.thumbs.swiper = swiper2;
 });

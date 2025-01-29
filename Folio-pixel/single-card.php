@@ -38,7 +38,7 @@ get_header(); ?>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <?php
-                            $galerie = get_field('galerie'); // Récupère les images de la galerie ACF
+                            $galerie = get_field('galerie'); 
                             if ($galerie) {
                                 foreach ($galerie as $photo) {
                             ?>

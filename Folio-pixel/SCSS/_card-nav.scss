@@ -55,9 +55,9 @@
 
 @keyframes bounce-reverse {
     0%, 100% {
-        transform: translateY(0) rotate(180deg); /* Pas de mouvement vertical */
+        transform: translateY(0) rotate(180deg); 
     }
     50% {
-        transform: translateY(5px) rotate(180deg); /* Mouvement vertical vers le bas */
+        transform: translateY(5px) rotate(180deg); 
     }
 }

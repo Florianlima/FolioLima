@@ -1,8 +1,14 @@
+<button id="burger-menu" class="burger-menu">
+  <div class="bar bar-1"></div>
+  <div class="bar bar-2"></div>
+  <div class="bar bar-3"></div>
+</button>
 <?php get_header(); ?>
 
 <body id="side-bar">
 
     <main class="container">
+    
         <div class="gameboy-screen">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/background.webp" alt="">
             <div class="start" id="start">START</div>
@@ -14,7 +20,14 @@
                     <div class="arrow-dial"></div>
                 </div>
             </div>
-            <nav class="menu-pokemon" id="menu">
+            
+
+            
+            <?php get_template_part('templates_parts/presentation'); ?>
+
+            
+        </div>
+        <nav class="menu-pokemon" id="menu">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
@@ -23,10 +36,6 @@
                 ));
                 ?>
             </nav>
-            <?php get_template_part('templates_parts/presentation'); ?>
-
-            
-        </div>
         
         <!-- Section des Pokéballs -->
         <section class="pokeball-projects">

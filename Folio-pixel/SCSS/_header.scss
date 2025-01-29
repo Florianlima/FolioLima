@@ -161,13 +161,14 @@ header ,body  {
 
 .menu-pokemon {
     position: absolute;
-    bottom: 48%;
+    /*bottom: 48%;*/
+    top: 14%;
     left: 51%;
     width: 12%;
     background: white;
     color: black;
-    border: 4px solid #000;  /* Bordure épaisse et solide pour imiter les pixels */
-    border-radius: 0; /* Pas de bordure arrondie */
+    border: 4px solid #000;  
+    border-radius: 0;
     padding: 10px;
     font-family: 'Pokemon_Classic';
     text-align: left;
