@@ -8,7 +8,7 @@
         <br> J’ai appris à travailler avec des outils modernes tels que Git et GitHub pour la gestion de version, ainsi qu’Elementor et Gutenberg pour créer des sites puissants et personnalisés. 
         <br>En résumé, j'ai appris à coder de manière réfléchie, en optimisant chaque projet pour qu'il soit à la fois rapide, flexible et bien adapté à son public.
         <br>Explore mon portfolio pour découvrir mes réalisations et voir comment je mixe mes compétences avec un brin d’humour et de passion.
-        </p>
         <button id="closeCharacterModal">Fermer</button>
+        </p>
     </div>
 </div>

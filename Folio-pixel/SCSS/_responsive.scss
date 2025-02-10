@@ -245,3 +245,18 @@
         font-size: 18px;
     }
 }
+
+
+@media (max-width: 1044px) {
+    .character {
+        bottom: 35%; 
+        left: 17%;
+        
+    }
+
+    .character img {
+        width: 40%; 
+        top: 120px;
+        left: 163px;
+    }
+}

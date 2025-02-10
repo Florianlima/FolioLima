@@ -27,6 +27,9 @@
     text-align: center;
     border: 7px solid white;
     box-shadow: 0 4px 8px darkgray;
+    overflow-y: auto;
+    display: flex;
+    height: 50vh;
 }
 
 .character-modal-content p {
