@@ -34,6 +34,16 @@ get_header(); ?>
                         }
                         ?>
                     </div>
+                    <div class="post-liens">
+    <?php
+    $lien = get_field('lien');
+    if ($lien) {
+        echo '<a href="' . esc_url($lien) . '" target="_blank" rel="noopener noreferrer">' . esc_html($lien) . '</a>';
+    }
+    ?>
+</div>
+
+
                     <div class="second-section">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">

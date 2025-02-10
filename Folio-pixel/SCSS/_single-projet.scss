@@ -24,13 +24,29 @@
     font-family: 'Pokemon_Classic';
     font-size: 1rem;
     box-shadow: 2px 2px 0 black;
-    position: absolute;
+    // position: absolute;
     top: 352px;
     background-color: #C4CFA1;
     left: 54px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
 }
-
+.post-liens{
+    border: 3px solid black;
+    padding: 10px;
+    font-family: 'Pokemon_Classic';
+    font-size: 1rem;
+    box-shadow: 2px 2px 0 black;
+    // position: absolute;
+    top: 252px;
+    background-color: #C4CFA1;
+    left: 54px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
 .post-thumbnail{
     display: flex;
     margin-top: 18px;

@@ -409,11 +409,27 @@ header, body {
   font-family: "Pokemon_Classic";
   font-size: 1rem;
   box-shadow: 2px 2px 0 black;
-  position: absolute;
   top: 352px;
   background-color: #C4CFA1;
   left: 54px;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.post-liens {
+  border: 3px solid black;
+  padding: 10px;
+  font-family: "Pokemon_Classic";
+  font-size: 1rem;
+  box-shadow: 2px 2px 0 black;
+  top: 252px;
+  background-color: #C4CFA1;
+  left: 54px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  display: none;
 }
 
 .post-thumbnail {
@@ -868,6 +884,10 @@ body {
     top: 120px;
     left: 84px;
   }
+  .post-liens {
+    top: 120px;
+    left: 84px;
+  }
   /*.swiper{
        width: 684px;
        height: 380px;
@@ -967,6 +987,10 @@ body {
   .post-techno {
     top: 120px;
     left: 0px;
+  }
+  .post-liens {
+    top: 120px;
+    left: 84px;
   }
   /* SWIPER */
   .swiper {
